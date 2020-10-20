@@ -1,0 +1,43 @@
+
+<style> 
+body { 
+    margin: 0; 
+    padding: 0; 
+    background: green; 
+} 
+
+.geeks { 
+    width: 400px; 
+    height: 2px; 
+    background: #fff; 
+    position: relative; 
+    top: 230%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+} 
+
+.geeks::before { 
+    content: ""; 
+    position: absolute; 
+    top: -50; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: peru; 
+    animation: animate 15s linear infinite; 
+} 
+
+@keyframes animate { 
+    0% { 
+        left: 0; 
+    } 
+
+    50% { 
+        left: 100%; 
+    } 
+
+    0% { 
+        left: 0; 
+    } 
+} 
+</style>
